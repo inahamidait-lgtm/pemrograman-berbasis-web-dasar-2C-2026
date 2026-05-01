@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BzMe Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+
+  <body class="bg-gray-50 dark:bg-gray-900 dark:text-white transition">
+    <nav class="fixed w-full flex justify-between items-center px-8 py-3 bg-white dark:bg-gray-800 z-50">
+      <div class="flex items-center space-x-3">
+        <img src="Logo.png" class="w-10 h-10" />
+        <h3 class="text-2xl font-bold text-purple-700">BzMe</h3>
+      </div>
+
+      <ul class="flex space-x-6 font-bold">
+        <li><a href="#home" class="text-orange-400">Home</a></li>
+        <li><a href="#about" class="hover:text-purple-500">About</a></li>
+        <li><a href="#services" class="hover:text-purple-500">Services</a></li>
+        <li><a href="#contact" class="hover:text-purple-500">Contact</a></li>
+      </ul>
+
+      <div class="space-x-2">
+        <button class="bg-orange-500 text-white px-4 py-2 rounded-lg font-bold">Sign Up</button>
+        <button id="toggleDark" class="bg-purple-600 text-white px-3 py-2 rounded-lg">Dark</button>
+      </div>
+    </nav>
+
+    <section id="home" class="pt-24 px-10 py-16 grid md:grid-cols-2 items-center">
+      <div>
+        <h2 class="text-6xl font-bold leading-tight">
+          We Create <br />
+          <span class="text-purple-600">Solutions</span> For <br />
+          Your Business
+        </h2>
+        <p class="text-gray-500 mt-4">
+          We provide intelligent technology solutions to<br />
+          optimize efficiency and accelerate the growth of <br />
+          your business operations.
+        </p>
+        <button class="mt-6 bg-orange-400 text-white px-5 py-2 rounded-lg hover:scale-105 transition">Get Started</button>
+      </div>
+      <img src="1.png" class="w-85 mx-auto" />
+    </section>
+
+    <section id="services" class="text-center px-10 py-16">
+      <h3 class="text-2xl font-bold mb-10">We Provide The Best <span class="text-purple-600">Services</span></h3>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white dark:bg-gray-700 shadow-lg border border-purple-700 rounded p-6 text-center">
+          <img src="icon 1.png" alt="SEO Icon" class="w-12 h-12 mb-4 bg-[#FFD47E] rounded-full" />
+          <h3 class="font-bold mb-2 text-left dark:text-gray-100">Seo/Sem</h3>
+          <p class="text-gray-600 mb-4 text-left dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-900">Click Here</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 shadow-lg border border-purple-700 rounded p-6 text-center">
+          <img src="icon 1.png" alt="SEO Icon" class="w-12 h-12 mb-4 bg-[#FFD47E] rounded-full" />
+          <h3 class="font-bold mb-2 text-left dark:text-gray-100">Viral Campaign</h3>
+          <p class="text-gray-600 mb-4 text-left dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-900">Click Here</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 shadow-lg border border-purple-700 rounded p-6 text-center">
+          <img src="icon 2.png" alt="SEO Icon" class="w-12 h-12 mb-4 bg-[#FFD47E] rounded-full" />
+          <h3 class="font-bold mb-2 text-left dark:text-gray-100">Marketing</h3>
+          <p class="text-gray-600 mb-4 text-left dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-900">Click Here</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 shadow-lg border border-purple-700 rounded p-6 text-center">
+          <img src="icon 3.png" alt="SEO2" class="w-12 h-12 mb-4 bg-[#FFD47E] rounded-full" />
+          <h3 class="font-bold text-left mb-2 dark:text-gray-100">Others</h3>
+          <p class="text-gray-600 mb-4 text-left dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-900">Click Here</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 items-center dark:bg-gray-900 dark:text-white bg-orange-100 px-10 py-16">
+      <img src="2.png" class="w-85 mx-auto" />
+      <div>
+        <h3 class="text-6xl font-bold">Simple <span class="text-purple-600">Solutions!</span></h3>
+        <p class="text-gray-600 mt-4">
+          We understand that no two <br />
+          are alike. That’s why we take the time to truly <br />
+          understand your unique goals, challenges, and vision.
+        </p>
+        <div class="mt-6 space-x-4">
+          <button class="bg-orange-400 text-white px-4 py-2 rounded-lg">Get Started</button>
+          <button class="border border-[#8A38F5] text-[#8A38F5] px-4 py-2 rounded-lg">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="grid md:grid-cols-2 items-center px-10 py-16">
+      <div>
+        <h3 class="text-6xl font-bold">Our <span class="text-purple-600">Agency</span></h3>
+        <p class="text-gray-500 mt-4">
+          We believe in the power of data. Our<br />
+          analytics-driven approach allows<br />
+          us to make informed Let's turn your data into actionable<br />
+          insights adored Solutions for Your<br />
+          Business.
+        </p>
+        <button class="mt-6 bg-orange-400 text-white px-4 py-2 rounded-lg">Read More</button>
+      </div>
+
+      <img src="3.png" class="w-85 mx-auto" />
+    </section>
+
+    <section class="text-center px-10 py-16">
+      <h2 class="text-3xl font-bold">What <span class="text-orange-400">Clients</span> Say!</h2>
+      <p class="text-gray-500 mt-4">
+        See How Our Digital Marketing Agency Helped Clients <br />
+        Achieve Their Goals.
+      </p>
+      <div id="cards" class="grid md:grid-cols-3 gap-6 mt-10"></div>
+    </section>
+
+    <footer class="bg-[#FFD47E] dark:bg-gray-700 pt-10">
+      <div class="w-full flex justify-center -mt-16 mb-10">
+        <div class="w-3/4 bg-[#FF9335] text-white flex justify-between items-center px-10 py-3 rounded-xl shadow-lg">
+          <p class="font-semibold text-lg">Ready To Get Started?</p>
+          <a href="#" onclick="openModal()" class="bg-transparent border border-white px-5 py-2 rounded-lg inline-block"> Contact Us </a>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8 px-8 py-12">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <img src="Logo.png" class="w-10 h-10" />
+            <span class="text-[#8A38F5] dark:text-purple-300 font-bold text-xl">BzMe</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-2 text-gray-700 dark:text-gray-100">Company</h3>
+          <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+            <li><a href="#about" class="hover:text-amber-400">About</a></li>
+            <li><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+            <li><a href="#careers" class="hover:text-amber-400">Careers</a></li>
+            <li><a href="#team" class="hover:text-amber-400">Team</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-2 text-gray-700 dark:text-gray-100">Designs</h3>
+          <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+            <li><a href="#" class="hover:text-amber-400">Find a Designer</a></li>
+            <li><a href="#" class="hover:text-amber-400">Discover Inspiration</a></li>
+            <li><a href="#" class="hover:text-amber-400">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-2 text-gray-700 dark:text-gray-100">Support</h3>
+          <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+            <li><a href="#" class="hover:text-amber-400">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-amber-400">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("toggleDark").onclick = () => {
+        document.documentElement.classList.toggle("dark");
+      };
+
+      const data = [
+        { name: "Johnny Suh", role: "CEO", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.", rating: 4 },
+        { name: "Nashley Joan", role: "CEO", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.", rating: 4 },
+        { name: "Mark Z.", role: "CEO", text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.", rating: 5 },
+      ];
+
+      const container = document.getElementById("cards");
+
+      data.forEach((d, i) => {
+        const stars = "★".repeat(d.rating) + "☆".repeat(5 - d.rating);
+
+        const el = document.createElement("div");
+        el.className = "bg-white dark:bg-gray-700 shadow-lg border rounded-xl p-6 text-center";
+
+        el.innerHTML = `
+      <h3 class="text-orange-400 text-left font-bold">${d.name}</h3>
+      <p class="text-sm text-left text-gray-400">${d.role}</p>
+      <p class="mt-2 text-left">${d.text}</p>
+      <div class="text-yellow-400 mt-2">${stars}</div>
+      `;
+
+        container.appendChild(el);
+      });
+
+      function openModal() {
+        const modal = document.getElementById("contactModal");
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      }
+
+      function closeModal() {
+        document.getElementById("contactModal").classList.add("hidden");
+      }
+
+      function submitForm() {
+        alert("Data berhasil dikirim!");
+        closeModal();
+      }
+    </script>
+
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl w-80 relative">
+        <button onclick="closeModal()" class="absolute top-2 right-3">✖</button>
+        <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+        <input type="email" placeholder="Email" class="w-full mb-3 px-4 py-2 border rounded dark:bg-gray-700" />
+        <input type="text" placeholder="Nama" class="w-full mb-3 px-4 py-2 border rounded dark:bg-gray-700" />
+        <input type="password" placeholder="Password" class="w-full mb-3 px-4 py-2 border rounded dark:bg-gray-700" />
+        <button onclick="submitForm()" class="w-full bg-purple-600 text-white py-2 rounded">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
